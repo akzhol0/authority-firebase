@@ -1,0 +1,66 @@
+@import url(./reset.css);
+
+html, body {
+    background: #f6f6f6;
+}
+
+.wrapper-all {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader-wrapper {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.loader-wrapper .line {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #000;
+}
+
+.line1 {
+    animation: loader .6s ease-in-out 0s infinite alternate-reverse;
+}
+
+.line2 {
+    animation: loader .6s ease-in-out .1s infinite alternate-reverse;
+}
+
+.line3 {
+    animation: loader .6s ease-in-out .2s infinite alternate-reverse;
+}
+
+@keyframes loader {
+    0% {
+        margin: 0px 0 0 0;
+    } 100% {
+        margin: -50px 0 0 0;
+    }
+}
+
+.btn-wrapper button {
+    width: 120px;
+    height: 30px;
+    background: #0560FD;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
